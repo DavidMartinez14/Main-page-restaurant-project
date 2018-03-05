@@ -1,19 +1,8 @@
-/* Color Palette
-  White: #ffffff;
-  Black: #111111;
-  Medium Gray: #9C9C9C;
-  Aqua: #0A4958;
-  Yellow: #FFE11B;
-  Red: #C4151C;
-  Dark Crimson: #990000;
-  Light blue: #99ffff;
-*/
-
-
-/*********** Begin Layout Styles ***********/
 body {
   background-color: #990000;
   background-size: contain;
+  overflow-x: scroll;
+  overflow-y: scroll;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -22,6 +11,7 @@ body {
   font-family: 'Berkshire Swash', cursive;
   font-family: 'Amatic SC', cursive;
   font-size: 20px;
+  vertical-align: middle;
 }
 
 div.container {
@@ -29,7 +19,10 @@ div.container {
   margin-left: auto;
   margin-right: auto;
   margin:  0  auto;
-  /*max-width: 900px; disable this line if you want full-width layouts */
+  padding: 8px;
+	margin: 30px;
+  display: inline-block;
+  position: inherit;
 }
 
 header, main, footer {
@@ -37,10 +30,9 @@ header, main, footer {
   margin: 15px;
 }
 
-/* phones (base layout is mobile-first) */
+
 header {
   padding: 10px;
-  /*border: 3px solid #990000;*/
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -53,7 +45,6 @@ header {
 
 main {
   padding: 10px;
-  /*border: 3px solid #009900;*/
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -67,7 +58,6 @@ main {
 
 footer {
   padding: 10px;
-  /*border: 3px solid #000099;*/
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -77,7 +67,6 @@ footer {
     "contacts";
 }
 
-/* tablets and small laptops */
 @media (min-width: 600px) {
 
   header {
@@ -105,7 +94,6 @@ footer {
   }
 }
 
-/* desktops */
 @media (min-width: 900px) {
   header {
     padding: 10px;
@@ -132,7 +120,6 @@ footer {
 }
 
 div {
-  /*border: 1px solid #999999;*/
   text-align: center;
 }
 
@@ -150,7 +137,7 @@ div#link-bar {
 
 div#carousel {
 grid-area: carousel;
-overflow: hidden;
+overflow: hidden; /*Didn't work for me*/
 }
 
 div#social-M {
@@ -171,12 +158,6 @@ div#map {
   overflow: hidden;
 }
 
-/*********** End Layout Styles ***********/
-
-
-/*********** Begin Content Styles ***********/
-
-/* Headings */
 h1 {
   text-align: center;
   font-family: 'Krona One', sans-serif;
@@ -204,8 +185,6 @@ h6 {
 
 }
 
-/* Paragraphs and lists */
-
 p {
 text-align: center;
 line-height: 1.6;
@@ -224,8 +203,6 @@ ul {
 li {
 
 }
-
-/* tables */
 
 table {
 
@@ -247,7 +224,6 @@ td {
 
 }
 
-/* images */
 img {
       max-width: 100%;
       height: auto;
@@ -272,7 +248,6 @@ img.center {
     margin-right: auto;
 }
 
-/* links */
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -312,9 +287,3 @@ a:hover {
 a:active {
 
 }
-
-/* forms */
-
-
-
-/*********** End Content Styles ***********/
