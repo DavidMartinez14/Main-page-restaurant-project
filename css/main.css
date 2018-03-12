@@ -27,7 +27,6 @@ header, main, footer {
 
 
 header {
-  padding: 10px;
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -39,7 +38,6 @@ header {
 }
 
 main {
-  padding: 10px;
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -52,7 +50,6 @@ main {
 }
 
 footer {
-  padding: 10px;
   display: grid;
   grid-column-gap: 15px;
   grid-row-gap: 15px;
@@ -65,7 +62,6 @@ footer {
 @media (min-width: 600px) {
 
   header {
-    padding: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "logo name"
@@ -82,7 +78,6 @@ footer {
   }
 
   footer {
-    padding: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "social-M contacts";
@@ -91,7 +86,6 @@ footer {
 
 @media (min-width: 900px) {
   header {
-    padding: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "logo logo name"
@@ -107,7 +101,6 @@ footer {
   }
 
   footer {
-    padding: 10px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "social-M contacts";
@@ -119,7 +112,7 @@ div {
 }
 
 main div {
-    min-height: 80px;
+    /*min-height: 80px;/*
 }
 
 div#logo {
